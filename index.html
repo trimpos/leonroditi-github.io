@@ -1,155 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Biología Vital — Sitio Base</title>
-  <meta name="description" content="Base mínima y seria para el sitio de Biología Vital. Lista para pegar encabezados, scripts y contenido.">
-  <link rel="stylesheet" href="style.css">
-  <!-- Opcional: fuente Inter vía system font stack para mantenerlo simple y rápido -->
-</head>
-<body>
-  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <meta name="description" content="Plantilla sobria y responsiva para Biología Vital.">
+  <link rel="stylesheet" href="style.css?v=4">
 
-  <header role="banner" aria-label="Barra de navegación">
+  <!-- Ícono base (se puede reemplazar luego por favicon personalizado) -->
+  <link rel="icon" href="assets/logo-bv.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header role="banner" aria-label="Barra de navegación principal">
     <div class="container">
       <nav class="nav" role="navigation" aria-label="Principal">
-      
-
-</div>
-
+        <div class="brand">
+          <a href="#inicio" aria-label="Inicio Biología Vital">
+            <img src="assets/logo-bv.svg?v=2" alt="Biología Vital" class="logo">
+          </a>
+        </div>
         <ul class="menu" id="menu-principal">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre">Sobre BV</a></li>
-          <li><a href="#volumenes">Volúmenes <div class="brand">
-  <a href="/" aria-label="Biología Vital">
-    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="40" viewBox="0 0 220 56" role="img">
-      <rect width="220" height="56" fill="transparent"/>
-      <g transform="translate(6,6)">
-        <rect x="0" y="0" width="44" height="44" rx="8" ry="8" fill="none" stroke="#111827" stroke-width="2"/>
-        <path d="M12 12 h9 a7 7 0 0 1 0 14 h-9 v-14 z M12 26 h10 a7 7 0 0 1 0 14 h-10 v-14 z" fill="#111827"/>
-        <path d="M36 12 v28 h-4 v-28 h4 z" fill="#111827"/>
-      </g>
-      <g transform="translate(60,14)" fill="#111827">
-        <text x="0" y="18" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" font-size="18" font-weight="700">Biología</text>
-        <text x="0" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" font-size="16" font-weight="600">Vital</text>
-      </g>
-    </svg>
-  </a>
-</div>
-· Series</a></li>
-          <li><a href="#articulos">Artículos · Medium</a></li>
-          <li><a href="#biblioteca">Biblioteca BV</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-
-        <div class="nav-actions">
-          <a class="btn" href="#suscripcion">Suscripción</a>
-        </div>
-
-        <button class="burger" aria-controls="panel-movil" aria-expanded="false" id="burger" title="Abrir menú">Menú</button>
-      </nav>
-
-      <!-- Panel móvil -->
-      <div id="panel-movil" class="mobile-panel" aria-label="Menú móvil">
-        <ul class="mobile-menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre">Sobre BV</a></li>
-          <li><a href="#volumenes">Volúmenes · Series</a></li>
-          <li><a href="#articulos">Artículos · Medium</a></li>
-          <li><a href="#biblioteca">Biblioteca BV</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <div class="mobile-actions">
-          <a class="btn" href="#suscripcion">Suscripción</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main id="contenido">
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h1>Base mínima y seria</h1>
-        <p>Plantilla sobria y responsiva para empezar. Aquí puedes pegar tus encabezados, scripts, componentes y secciones sin distracciones.</p>
-      </div>
-    </section>
-
-    <section id="sobre">
-      <div class="container grid-2">
-        <div class="card">
-          <h2>Sobre BV</h2>
-          <p>Espacio para un párrafo corto describiendo el enfoque (Limpia · Equilibra · Regenera). Texto claro y profesional.</p>
-        </div>
-        <div class="card">
-          <h2>Qué encontrarás</h2>
-          <p>Guías, glosarios, protocolos y hojas visuales. Coloca aquí enlaces simples a PDF/DOCX cuando estén listos.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="volumenes">
-      <div class="container">
-        <h2>Volúmenes · Series</h2>
-        <div class="grid-2">
-          <div class="card">
-            <h3>I — Péptidos &amp; Hormesis</h3>
-            <p>Resumen breve y enlace al índice.</p>
-          </div>
-          <div class="card">
-            <h3>II — Minerales &amp; Ejes Neuroinflamatorios</h3>
-            <p>Resumen breve y enlace al índice.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="articulos">
-      <div class="container">
-        <h2>Artículos · Medium</h2>
-        <p>Más adelante conectaremos el feed de Medium o una lista manual de artículos destacados.</p>
-      </div>
-    </section>
-
-    <section id="biblioteca">
-      <div class="container">
-        <h2>Biblioteca BV</h2>
-        <p>Enlaces a tus PDFs, glosarios y materiales. Puedes usar tarjetas o una tabla simple.</p>
-      </div>
-    </section>
-
-    <section id="contacto">
-      <div class="container grid-2">
-        <div>
-          <h2>Contacto</h2>
-          <p>Email profesional y redes si aplica.</p>
-        </div>
-        <div id="suscripcion">
-          <h2>Suscripción</h2>
-          <p>Placeholder para un formulario sencillo (Substack/Mailchimp/ConvertKit).</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    <div class="container">
-      <div>© <span id="year"></span> Biología Vital · Todos los derechos reservados</div>
-    </div>
-  </footer>
-
-  <!-- JS mínimo (toggle móvil y año). -->
-  <script>
-    (function() {
-      const burger = document.getElementById('burger');
-      const panel = document.getElementById('panel-movil');
-      burger?.addEventListener('click', () => {
-        const open = panel.classList.toggle('open');
-        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      const yEl = document.getElementById('year');
-      if (yEl) yEl.textContent = new Date().getFullYear();
-    })();
-  </script>
-</body>
-</html>
+          <li><a href="#volumenes">
