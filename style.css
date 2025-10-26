@@ -138,3 +138,56 @@ p { color: var(--bv-fg); }
 footer { border-top: 1px solid var(--bv-border); padding: 24px 0; color: var(--bv-muted); }
 footer a { color: var(--bv-muted); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
+/* ===== Menú horizontal limpio ===== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 64px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--bv-fg);
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #f1f5f9;
+}
+
+/* ===== Logo alineado ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand svg, .brand img {
+  height: 36px;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .brand svg, .brand img { height: 30px; }
+}
+
