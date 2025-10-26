@@ -36,21 +36,31 @@ header {
   border-bottom: 1px solid var(--bv-border);
 }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+/* ===== Alineación del encabezado y logo ===== */
 .nav {
-  display: flex; align-items: center; justify-content: space-between;
-  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
 }
-.brand a {
-  text-decoration: none; color: var(--bv-fg); font-weight: 600; letter-spacing: .25px;
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.brand .logo {
+
+.brand svg, .brand img {
   height: 36px;
   display: block;
 }
 
 @media (max-width: 860px) {
-  .brand .logo {
+  .brand svg, .brand img {
     height: 30px;
+  }
+}
+
   }
 }
 
