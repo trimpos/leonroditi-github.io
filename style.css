@@ -64,6 +64,7 @@ header {
   }
 }
 
+/* ===== Menú horizontal limpio ===== */
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +74,11 @@ header {
   margin: 0;
   padding: 0;
 }
+
+.menu li {
+  list-style: none;
+}
+
 .menu a {
   text-decoration: none;
   color: var(--bv-fg);
@@ -81,9 +87,12 @@ header {
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
-.menu a:hover, .menu a:focus {
+
+.menu a:hover,
+.menu a:focus {
   background-color: #f1f5f9;
 }
+
 
 }
 .menu a:hover, .menu a:focus { background: #f8fafc; }
