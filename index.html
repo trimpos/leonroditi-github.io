@@ -1,61 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Biología Vital — León Roditi Herrera</title>
-  <style>
-    :root{
-      --azul:#002b5c; --gris:#f5f7fa; --texto:#1a1a1a;
-    }
-    html,body{margin:0;padding:0}
-    body{font-family:Cambria,Georgia,serif;background:var(--gris);color:var(--texto);line-height:1.7}
-    header{background:var(--azul);color:#fff;text-align:center;padding:3rem 1rem 2rem}
-    h1{margin:.2rem 0 0;font-size:2.6rem;letter-spacing:.5px}
-    h2{margin:.4rem 0 0;font-weight:300;color:#d4e1f5}
-    .hero-sigilo{
-      width:160px; height:auto; display:block; margin:18px auto 14px;
-      border-radius:12px; box-shadow:0 0 25px rgba(255,255,255,.25);
-    }
-    main{max-width:820px;margin:0 auto;padding:2.2rem 1.4rem;text-align:center}
-    footer{background:var(--azul);color:#cbd6e3;text-align:center;padding:1rem;margin-top:2.5rem}
-/* Imagen del sigilo */
-.hero-sigilo{
-  width:160px;          /* ajusta aquí si lo quieres más grande/pequeño */
-  height:auto;
-  display:block;
-  margin:20px auto 14px;
-  border-radius:12px;
-  box-shadow:0 0 25px rgba(255,255,255,.25);
-}
-
-/* Un poco más pequeño en pantallas chicas */
-@media (max-width:480px){
-  .hero-sigilo{ width:140px; margin:16px auto 12px; }
-}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biología Vital — Sitio Base</title>
+  <meta name="description" content="Base mínima y seria para el sitio de Biología Vital. Lista para pegar encabezados, scripts y contenido.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Opcional: fuente Inter vía system font stack para mantenerlo simple y rápido -->
 </head>
 <body>
-<header>
-  <img 
-    src="assets/img/sigilo-bv.jpg"
-    alt="Sigilo / emblema de Biología Vital"
-    class="hero-sigilo">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
-  <h1>Biología Vital</h1>
-  <h2>Limpia · Equilibra · Regenera</h2>
-</header>
- 
+  <header role="banner" aria-label="Barra de navegación">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Principal">
+        <div class="brand"><a href="/">Biología&nbsp;Vital</a></div>
 
-  <main>
-    <p><strong>Biología Vital</strong> es un espacio de integración entre ciencia, medicina vitalista y conciencia aplicada.</p>
-    <p>Su propósito es redescubrir las leyes vivas que rigen el equilibrio del cuerpo, la mente y la energía, uniendo el lenguaje de la biología con la sabiduría de las tradiciones espirituales.</p>
-    <p>Creado y desarrollado por <strong>León Roditi Herrera</strong>.</p>
+        <ul class="menu" id="menu-principal">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre BV</a></li>
+          <li><a href="#volumenes">Volúmenes · Series</a></li>
+          <li><a href="#articulos">Artículos · Medium</a></li>
+          <li><a href="#biblioteca">Biblioteca BV</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="btn" href="#suscripcion">Suscripción</a>
+        </div>
+
+        <button class="burger" aria-controls="panel-movil" aria-expanded="false" id="burger" title="Abrir menú">Menú</button>
+      </nav>
+
+      <!-- Panel móvil -->
+      <div id="panel-movil" class="mobile-panel" aria-label="Menú móvil">
+        <ul class="mobile-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre BV</a></li>
+          <li><a href="#volumenes">Volúmenes · Series</a></li>
+          <li><a href="#articulos">Artículos · Medium</a></li>
+          <li><a href="#biblioteca">Biblioteca BV</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="mobile-actions">
+          <a class="btn" href="#suscripcion">Suscripción</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>Base mínima y seria</h1>
+        <p>Plantilla sobria y responsiva para empezar. Aquí puedes pegar tus encabezados, scripts, componentes y secciones sin distracciones.</p>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Sobre BV</h2>
+          <p>Espacio para un párrafo corto describiendo el enfoque (Limpia · Equilibra · Regenera). Texto claro y profesional.</p>
+        </div>
+        <div class="card">
+          <h2>Qué encontrarás</h2>
+          <p>Guías, glosarios, protocolos y hojas visuales. Coloca aquí enlaces simples a PDF/DOCX cuando estén listos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="volumenes">
+      <div class="container">
+        <h2>Volúmenes · Series</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>I — Péptidos &amp; Hormesis</h3>
+            <p>Resumen breve y enlace al índice.</p>
+          </div>
+          <div class="card">
+            <h3>II — Minerales &amp; Ejes Neuroinflamatorios</h3>
+            <p>Resumen breve y enlace al índice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="articulos">
+      <div class="container">
+        <h2>Artículos · Medium</h2>
+        <p>Más adelante conectaremos el feed de Medium o una lista manual de artículos destacados.</p>
+      </div>
+    </section>
+
+    <section id="biblioteca">
+      <div class="container">
+        <h2>Biblioteca BV</h2>
+        <p>Enlaces a tus PDFs, glosarios y materiales. Puedes usar tarjetas o una tabla simple.</p>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container grid-2">
+        <div>
+          <h2>Contacto</h2>
+          <p>Email profesional y redes si aplica.</p>
+        </div>
+        <div id="suscripcion">
+          <h2>Suscripción</h2>
+          <p>Placeholder para un formulario sencillo (Substack/Mailchimp/ConvertKit).</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    © 2025 León Roditi Herrera — Biología Vital
+  <footer role="contentinfo">
+    <div class="container">
+      <div>© <span id="year"></span> Biología Vital · Todos los derechos reservados</div>
+    </div>
   </footer>
 
+  <!-- JS mínimo (toggle móvil y año). -->
+  <script>
+    (function() {
+      const burger = document.getElementById('burger');
+      const panel = document.getElementById('panel-movil');
+      burger?.addEventListener('click', () => {
+        const open = panel.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      const yEl = document.getElementById('year');
+      if (yEl) yEl.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
