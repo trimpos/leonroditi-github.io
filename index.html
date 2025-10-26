@@ -80,15 +80,23 @@
       h1{font-size:2.2rem}
       .hero-figure img{max-width:170px}
     }
+    .hero-sigilo{
+  width:160px;        /* tamaño más pequeño */
+  height:auto;
+  display:block;
+  margin:20px auto 10px;
+  border-radius:12px;
+  box-shadow:0 0 25px rgba(255,255,255,.25);
+}
   </style>
 </head>
 <body>
  <header>
-  <!-- Sigilo arriba del título -->
-  <img src="assets/img/sigilo-bv.jpg"
-       alt="Sigilo / emblema de Biología Vital"
-       style="max-width:220px;display:block;margin:0 auto 20px;
-              border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.25)">
+  <!-- Sigilo arriba del título (forzado por URL RAW para evitar caché) -->
+  <img
+    src="https://raw.githubusercontent.com/trimpos/leonroditi-github.io/main/assets/img/sigilo-bv.jpg?v=5"
+    alt="Sigilo / emblema de Biología Vital"
+    class="hero-sigilo">
 
   <h1>Biología Vital</h1>
   <h2>Limpia · Equilibra · Regenera</h2>
