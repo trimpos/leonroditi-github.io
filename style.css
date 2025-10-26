@@ -43,10 +43,27 @@ header {
 .brand a {
   text-decoration: none; color: var(--bv-fg); font-weight: 600; letter-spacing: .25px;
 }
-.menu { display: flex; gap: 20px; align-items: center; list-style: none; margin: 0; padding: 0; }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .menu a {
-  text-decoration: none; color: var(--bv-fg); font-weight: 500;
-  padding: 6px 4px; border-radius: 4px;
+  text-decoration: none;
+  color: var(--bv-fg);
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.menu a:hover, .menu a:focus {
+  background-color: #f1f5f9;
+}
+
 }
 .menu a:hover, .menu a:focus { background: #f8fafc; }
 .nav-actions { display: flex; gap: 12px; align-items: center; }
