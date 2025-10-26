@@ -43,6 +43,17 @@ header {
 .brand a {
   text-decoration: none; color: var(--bv-fg); font-weight: 600; letter-spacing: .25px;
 }
+.brand .logo {
+  height: 36px;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .brand .logo {
+    height: 30px;
+  }
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
